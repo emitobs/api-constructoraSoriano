@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('v1/proyects', [App\Http\Controllers\ProyectController::class, 'getProyects'])->name('getProyects');
+Route::get('v1/projects/{id?}',[App\Http\Controllers\API\V1\ProjectController::class,'getProjects']);
+
 
 
